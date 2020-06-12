@@ -163,11 +163,12 @@ function componentDidMount(lat, lng) {
      mapListOfHospitals(dataResponse)
  
   })
+   alert("Please Enable CORs using a pluggin") // We need CORS  enabled using plugin to view the data {https://chrome.google.com/webstore/detail/moesif-orign-cors-changer/digfbfaphojjndkpccljibejjbppifbc?hl=en-US}
   .catch(console.log)
 }
 
 function mapListOfHospitals(dataResponse){
-  console.log("List of Hospitals around 20 mile radius***");
+  alert("Alert ist of Hospitals around 20 mile radius");
   var hospitalResultTable = $('#tblResult tbody');
   $.each(dataResponse, function (index, val) {   
     let name = val.name;
